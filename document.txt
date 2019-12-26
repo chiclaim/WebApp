@@ -1,0 +1,11 @@
+
+
+IDEA 创建 Web 项目步骤：
+
+https://www.cnblogs.com/shindo/p/7272646.html
+https://www.jianshu.com/p/82446a31f0b9
+
+
+如果 Tomcat 启动日志乱码：https://blog.csdn.net/u012744265/article/details/84984052
+
+
