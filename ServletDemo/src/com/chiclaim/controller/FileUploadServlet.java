@@ -79,17 +79,15 @@ public class FileUploadServlet extends HttpServlet {
 
                         if (Objects.isNull(item.getName()) || "".equals(item.getName().trim())) continue;
 
-                        System.out.println("file name: " + item.getName());
-
                         String fileName = new File(item.getName()).getName();
                         String filePath = uploadPath + File.separator + fileName;
                         File storeFile = new File(filePath);
                         item.write(storeFile);
 
-                        System.out.println(storeFile.getAbsolutePath());
+                        System.out.println("文件存储路径：" + storeFile.getAbsolutePath());
                     } else { // 处理普通字段
                         System.out.println("getName -> " + item.getName()
-                                + ", getFieldName -> " + item.getFieldName() + ",getString -> " + item.getString());
+                                + ", getFieldName -> " + item.getFieldName() + ", getString -> " + item.getString("UTF-8"));
                     }
                 }
             }
