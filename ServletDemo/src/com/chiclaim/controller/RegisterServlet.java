@@ -18,7 +18,8 @@ public class RegisterServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setCharacterEncoding("UTF-8");
         resp.setContentType("application/json; charset=utf-8");
-
+        // test retrofit body null
+        resp.setStatus(204);
         String username = req.getParameter("username");
         String mobile = req.getParameter("mobile");
         if (username == null || username.isEmpty()) {
